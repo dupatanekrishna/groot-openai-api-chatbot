@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+wrangler.toml
+wrangler.json
+wrangler.jsonc
+.wrangler/
+node_modules/
+.DS_Store
+*.log

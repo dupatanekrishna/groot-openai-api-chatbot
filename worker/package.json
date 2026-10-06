@@ -1,0 +1,5 @@
+{
+  "name": "groot-api",
+  "private": true,
+  "type": "module"
+}

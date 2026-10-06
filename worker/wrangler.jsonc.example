@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "groot-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-06",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "OPENAI_MODEL": "gpt-6-luna",
+    "ALLOWED_ORIGIN": "https://YOUR_PORTFOLIO_ORIGIN"
+  },
+  "d1_databases": [
+    {
+      "binding": "GROOT_DB",
+      "database_name": "groot-usage",
+      "database_id": "YOUR_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "triggers": {
+    "crons": ["0 3 * * *"]
+  }
+}

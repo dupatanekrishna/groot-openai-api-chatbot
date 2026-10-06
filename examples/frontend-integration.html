@@ -1,0 +1,34 @@
+<!--
+  Minimal integration example.
+  Copy the pattern into an existing static site and adapt the visual styles.
+  This file contains no API key.
+-->
+<html lang="en" data-groot-api-base="https://YOUR_WORKER_SUBDOMAIN.workers.dev">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="groot-chat.css">
+  </head>
+  <body>
+    <main>
+      <h1>Portfolio</h1>
+      <p>Your existing static site content goes here.</p>
+    </main>
+
+    <section id="groot-chat" aria-labelledby="groot-chat-title">
+      <h2 id="groot-chat-title">Ask Groot</h2>
+      <p id="groot-chat-status" role="status">Connecting to Groot...</p>
+      <div id="groot-chat-messages" aria-live="polite"></div>
+      <label for="groot-chat-input">Your DevOps question</label>
+      <textarea
+        id="groot-chat-input"
+        maxlength="500"
+        placeholder="Ask a short DevOps question..."
+      ></textarea>
+      <button id="groot-chat-send" type="button" disabled>Ask Groot</button>
+      <p id="groot-chat-quota"></p>
+    </section>
+
+    <script src="groot-chat.js" defer></script>
+  </body>
+</html>
