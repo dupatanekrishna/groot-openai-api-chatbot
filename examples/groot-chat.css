@@ -1,0 +1,86 @@
+#groot-chat {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  width: min(390px, calc(100vw - 2rem));
+  padding: 1rem;
+  border: 1px solid #23405f;
+  border-radius: 18px;
+  background: #0d172a;
+  color: #eef5ff;
+  box-shadow: 0 20px 60px rgb(0 0 0 / 35%);
+  font-family: system-ui, sans-serif;
+}
+
+#groot-chat h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#groot-chat-status,
+#groot-chat-quota {
+  color: #aab8ca;
+  font-size: .78rem;
+}
+
+#groot-chat-messages {
+  display: flex;
+  max-height: 300px;
+  flex-direction: column;
+  gap: .5rem;
+  overflow-y: auto;
+  margin: .8rem 0;
+}
+
+.groot-example-message {
+  margin: 0;
+  padding: .65rem .75rem;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.groot-example-message.user {
+  align-self: flex-end;
+  background: #125e59;
+}
+
+.groot-example-message.assistant {
+  align-self: flex-start;
+  background: #172641;
+}
+
+.groot-example-source {
+  color: #59dec9;
+  font-size: .75rem;
+}
+
+#groot-chat-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 72px;
+  padding: .65rem;
+  border: 1px solid #355272;
+  border-radius: 10px;
+  background: #08111f;
+  color: #fff;
+  font: inherit;
+  resize: vertical;
+}
+
+#groot-chat-send {
+  margin-top: .5rem;
+  padding: .6rem .9rem;
+  border: 0;
+  border-radius: 9px;
+  background: #20c6b0;
+  color: #06241f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#groot-chat-send:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
