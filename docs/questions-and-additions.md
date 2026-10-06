@@ -2,6 +2,8 @@
 
 This is the living change log for questions that arise while rebuilding or operating Groot. Add the question, the answer, the evidence or command used, and the documentation page that changed.
 
+The current explanatory chapter is [Questions and answers](questions-and-answers.md). Use this page for future additions rather than duplicating the same explanation in multiple documents.
+
 ## How to add an entry
 
 Use this format:

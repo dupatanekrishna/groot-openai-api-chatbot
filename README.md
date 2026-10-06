@@ -55,6 +55,7 @@ Browser
 | [Operations](docs/operations.md) | Secrets, usage limits, observability, cost guardrails, maintenance, and rollback |
 | [Troubleshooting](docs/troubleshooting.md) | Known errors and the checks that resolved them |
 | [Validation checklist](docs/validation-checklist.md) | Local, API, security, and production acceptance checks |
+| [Questions and answers](docs/questions-and-answers.md) | Why Cloudflare, answer customization, access, costs, GitHub integration, and Lambda comparison |
 | [Frontend examples](examples/frontend-integration.html) | Minimal markup plus companion CSS and JavaScript |
 | [Questions and additions](docs/questions-and-additions.md) | Living page for future questions and decisions |
 

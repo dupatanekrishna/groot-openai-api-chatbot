@@ -66,6 +66,7 @@ groot-openai-api-chatbot/
     ├── operations.md
     ├── troubleshooting.md
     ├── validation-checklist.md
+    ├── questions-and-answers.md
     └── questions-and-additions.md
 ~~~
 
