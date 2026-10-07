@@ -45,6 +45,24 @@ Browser
   <- short answer, official source links, quota metadata
 ~~~
 
+## Why the documentation is longer than the architecture
+
+The runbook is intentionally detailed so that the deployment can be reproduced safely later. It records setup commands, account boundaries, secret handling, quotas, migrations, validation checks, troubleshooting, rollback, and future extension options.
+
+The running system itself is small:
+
+~~~text
+Static portfolio
+  -> Cloudflare Worker
+       -> D1 quota check
+       -> OpenAI API
+  <- answer and official links
+~~~
+
+There is no Lambda, API Gateway, VM, container, or database server to maintain. Day-to-day maintenance normally means updating Worker code when needed, running Wrangler deploy, testing health and chat, and using a pull request for frontend changes.
+
+The design becomes more involved only if future versions add private GitHub repository access, user authentication, repository indexing, or advanced analytics. Those are optional extensions, not requirements for the current chatbot.
+
 ## Documentation map
 
 | Document | Purpose |
