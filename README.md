@@ -1,5 +1,9 @@
 # Groot OpenAI API Chatbot
 
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/dupatanekrishna/badge.svg)](https://hub.xerj.org/contributors/dupatanekrishna)
+
+A reproducible deployment lab from this repository was selected for the XERJ Corpus Hub and is currently in licence review.
+
 Reproducible documentation for a small production-style AI chatbot connected to a static portfolio.
 
 Groot is a friendly DevOps assistant embedded in a GitHub Pages website. The browser renders the chat widget, a Cloudflare Worker owns the API boundary, Cloudflare D1 stores quota state, and the OpenAI Responses API supplies short answers grounded in official documentation.
